@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative h-screen flex items-center justify-center text-center text-white"
+      className="relative min-h-screen flex items-center justify-center text-center text-white px-4"
     >
       {/* Background Image */}
       <div
@@ -19,27 +19,28 @@ const Hero = () => {
       <div className="absolute inset-0 bg-black/70"></div>
 
       {/* Content */}
-      <div className="relative z-10 px-4">
-        <h1 className="text-4xl md:text-6xl font-bold mb-4">
+      <div className="relative z-10 max-w-3xl w-full">
+        <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 leading-tight">
           Hi, I'm Geetanshu 👋
         </h1>
 
-        <p className="text-lg md:text-xl mb-6">
-          React Developer | Building modern web apps
+        <p className="text-base sm:text-lg md:text-xl mb-8 text-gray-300">
+          I build fast, responsive web apps with React & Node.js that solve real problems
         </p>
 
-        <div className="space-x-4">
+        {/* Buttons */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
             href="#projects"
-            className="bg-blue-500 px-6 py-3 rounded-lg hover:bg-blue-600 transition"
+            className="w-full sm:w-auto bg-blue-500 px-6 py-3 rounded-lg hover:bg-blue-600 transition text-center"
           >
             View Projects
           </a>
 
           <a
-            href="public\Geetanshu_React_Developer_Resume.pdf"
+            href="/Geetanshu_React_Developer_Resume.pdf"
             download
-            className="border px-6 py-3 rounded-lg hover:bg-white hover:text-black transition"
+            className="w-full sm:w-auto border px-6 py-3 rounded-lg hover:bg-white hover:text-black transition text-center"
           >
             Download Resume
           </a>
