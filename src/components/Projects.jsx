@@ -6,7 +6,7 @@ const projectData = [
     title: "Ecomm React App",
     desc: "A fully functional e-commerce application with authentication, cart management, and a complete checkout flow. Includes protected routes and persistent state.",
     tech: ["React", "Redux Toolkit", "Tailwind CSS", "React Router"],
-    live: "https://ecomm-react-djucy0725-geet1.vercel.app",
+    live: "https://ecomm-react-app-omega.vercel.app/",
     github: "https://github.com/GeetanshuPatil/Ecomm-react-app",
     image: img01, 
   },
